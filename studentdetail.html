@@ -1,0 +1,232 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+      <link type="text/css" rel="stylesheet" href="css/circle.css"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body class="white">
+      <!--Import jQuery before materialize.js-->
+      <ul id="add_dropdown" class="dropdown-content">
+  <li><a href="#!">Student</a></li>
+  <li><a href="#!">Subject</a></li>
+  <li><a href="#!">Teacher</a></li>
+    </ul>
+ <nav class="blue">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-button" href="#!" data-activates="add_dropdown">Add<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="badges.html">Attendance</a></li>
+        <li><a href="collapsible.html">Marks</a></li>
+        <li><a href="mobile.html">Subject</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a class="dropdown-button" href="#!" data-activates="add_dropdown">Add<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="badges.html">Attendance</a></li>
+        <li><a href="collapsible.html">Marks</a></li>
+        <li><a href="mobile.html">Subject</a></li>
+      </ul>
+    </div>
+  </nav> 
+
+  <div class="row" style="background-image: url(img/bg2.jpg);background-size: contain;">
+  <div class="col s2">
+  <div>
+         <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg" style=" display: block;
+  margin-left: auto;
+  margin-top: 80px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+    <div class="card" style="width: 180px; height: 40px;background-color: #ffffff;  border-radius: 180px;
+line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  font-style: bold;
+  margin-top: 20px;
+  color:red;
+  font-family: 'AvenirNext','Helvetica Neue',sans-serif;
+" class="blue-text">Saksham Chaudhary</div>
+</div>
+<div class="chip white black-text">Class X</div>
+<div class="chip orange white-text">Sec C</div>
+
+  </div>
+  <div class="col s10">
+  <div class="chip white orange-text" style="margin-left: 10px;margin-top: 20px"><i class="em em-star" style="margin-bottom: 3px"></i> <span style="margin-top: 20px;font-family: 'AvenirNext','Helvetica Neue'; margin-left: 1px">Scored Highest in Maths Test (Jan)</span></div>
+<div class="chip white green-text"
+" style="margin-left: 10px"><i class="em em-tada" style="margin-bottom: 3px"></i> <span style="margin-top: 20px;font-family: 'AvenirNext','Helvetica Neue'; margin-left: 1px">Winner in School Football match</span></div>
+
+<div style="overflow:auto;
+">
+<ul style="    float: left;
+    margin-right: -999em;
+    white-space: nowrap;
+    list-style: none;
+">
+  <li style="display: inline-block;"><div class="card white small" style="     display: inline-block;
+width: 250px;float: left; " id="div1"  onmouseover="mouseOver()" onmouseout="mouseOut()">
+<h4 class="center">Attendance</h4>
+<div class="divider"></div>
+<h1 class="green-text center">80%</h1>
+<p class="center grey-text lighten-3">2nd Highest Attendance in class.</p>
+<div style="margin-left: 22%
+"><div class="green white-text chip"><i class="material-icons tiny">trending_up</i>  30% increase</div></div>
+</div></li>
+  <li style="display: inline-block;"><div class="card white small" style="     display: inline-block;
+width: 250px;float: left; " id="div1"  onmouseover="mouseOver()" onmouseout="mouseOut()">
+<h4 class="center">Activitiy</h4>
+<div class="divider"></div>
+<h1 class="orange-text center">7/10</h1>
+<p class="center grey-text lighten-3">14th position in class.</p>
+<div style="margin-left: 22%
+"><div class="red white-text chip"><i class="material-icons tiny">trending_down</i>  10% decrease</div>
+</div></li>
+  <li style="display: inline-block;"><div class="card white small" style="     display: inline-block;
+width: 250px;float: left; " id="div1"  onmouseover="mouseOver()" onmouseout="mouseOut()">
+<h4 class="center">Diet</h4>
+<div class="divider"></div>
+<h1 class="green-text center">Good</h1>
+<p class="center grey-text lighten-3">He eats properly.</p>
+<div style="margin-left: 22%
+"><div class="green white-text chip"><i class="material-icons tiny">trending_up</i>  30% increase</div>
+</div></li>
+  <li style="display: inline-block;"><div class="card white small" style="     display: inline-block;
+width: 250px;float: left; " id="div1"  onmouseover="mouseOver()" onmouseout="mouseOut()">
+<h4 class="center">Behaviour</h4>
+<div class="divider"></div>
+<h1 class="red-text center">Rude</h1>
+<p class="center grey-text lighten-3">There's no improvement<br>Always bullies students.</p>
+<div style="margin-left: 22%
+">
+</div></li></ul>
+</div>
+
+  </div>
+  </div>
+  <div class="white">
+  <div class="row white">
+    <div class="card orange" style="width: 180px; height: 40px;background-color: #ffffff;  border-radius: 10px;
+line-height: 40px;
+  font-size: 20px;text-align: center;  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff
+" ><p>Expected Scores</p></div>
+  <div class="col s3">
+<div id="bluecircle" data-percent="85" class="big">
+</div>
+<h4 class="center grey-text lighten-5">English</h4>
+</div>  
+  <div class="col s3">
+<div id="bluecircle2" data-percent="80" class="big">
+</div>
+<h4 class="center grey-text lighten-5">Hindi</h4>
+</div>  
+  <div class="col s3">
+<div id="bluecircle3" data-percent="70" class="big">
+</div>
+<h4 class="center grey-text lighten-5">Maths</h4>
+</div>  
+  <div class="col s3">
+<div id="bluecircle4" data-percent="75" class="big">
+</div>
+<h4 class="center grey-text lighten-5">Science</h4>
+</div>  
+</div>
+</div>
+<div class="divider"></div>
+<div class="grey lighten-5" style="padding-top: 10px">
+    <div class="card purple" style="width: 180px; height: 40px;background-color: #ffffff;  border-radius: 10px;
+line-height: 40px;
+  font-size: 20px;text-align: center;  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  margin-top: 20px;
+" ><p>Graphs</p></div>
+  <div class="row grey lighten-5">
+  <div class="col s3">
+  <div class="card">
+  <h4 class="grey-text darken-4 center">Overall Expected GPA</h4>
+  <div class="ct-chart ct-perfect-fourth"></div>
+  </div>
+  </div>
+  <div class="col s9">
+  <div class="card">
+    <h4 class="grey-text darken-4 center">Attendance</h4>
+  <div class="ct-charttwo ct-perfect-fourth2"></div>
+  </div>
+  <div class="card">
+  <h4 class="grey-text darken-4 center">Activity(Sports)</h4>
+  <div class="ct-chartthree ct-perfect-fourth2"></div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</body>
+  </body>
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script type="text/javascript" src="js/pericircle.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $("#bluecircle").percircle();
+        $("#bluecircle2").percircle();
+        $("#bluecircle3").percircle();
+        $("#bluecircle4").percircle();
+    });
+    var data = {
+  // A labels array that can contain any sort of values
+  labels: ['April', 'June', 'July', 'August', 'September'],
+  // Our series array that contains series objects or in this case series data arrays
+  series: [
+    [6, 7, 7.5, 7, 8]
+  ]
+};
+
+// Create a new line chart object where as first parameter we pass in a selector
+// that is resolving to our chart container element. The Second parameter
+// is the actual data object.
+new Chartist.Line('.ct-chart', data);
+    var datatwo = {
+  // A labels array that can contain any sort of values
+  labels: ['April', 'June', 'July', 'August', 'September'],
+  // Our series array that contains series objects or in this case series data arrays
+  series: [
+    [70, 60, 90, 65, 80]
+  ]
+};
+
+// Create a new line chart object where as first parameter we pass in a selector
+// that is resolving to our chart container element. The Second parameter
+// is the actual data object.
+new Chartist.Line('.ct-charttwo', datatwo);
+new Chartist.Line('.ct-chart', data);
+    var datathree = {
+  // A labels array that can contain any sort of values
+  labels: ['April', 'June', 'July', 'August', 'September'],
+  // Our series array that contains series objects or in this case series data arrays
+  series: [
+    [7, 8, 5, 9, 8]
+  ]
+};
+
+// Create a new line chart object where as first parameter we pass in a selector
+// that is resolving to our chart container element. The Second parameter
+// is the actual data object.
+new Chartist.Line('.ct-chartthree', datathree);
+</script>
+  </html>

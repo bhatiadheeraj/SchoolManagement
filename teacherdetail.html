@@ -1,0 +1,321 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+              <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <ul id="add_dropdown" class="dropdown-content">
+  <li><a href="#!">Student</a></li>
+  <li><a href="#!">Subject</a></li>
+  <li><a href="#!">Teacher</a></li>
+    </ul>
+ <nav class="blue">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-button" href="#!" data-activates="add_dropdown">Add<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="badges.html">Attendance</a></li>
+        <li><a href="collapsible.html">Marks</a></li>
+        <li><a href="mobile.html">Subject</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a class="dropdown-button" href="#!" data-activates="add_dropdown">Add<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="badges.html">Attendance</a></li>
+        <li><a href="collapsible.html">Marks</a></li>
+        <li><a href="mobile.html">Subject</a></li>
+      </ul>
+    </div>
+  </nav> 
+
+  <div class="row" style="background-color: #202e3d">
+  <div class="col s3">
+  <div>
+         <img src="http://www.mylaporetimes.com/wp-content/uploads/2012/07/Dr.-Jayachandran-profile.jpg"   style=" display: block;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h4 class="white-text center">Narayan Murthy</h4>
+  <p class="grey-text center">Class Teacher : Class X (B)</p>
+  </div>
+  </div>
+  <div class="col s9">
+  <h5 class="white-text pill">Subjects</h5>
+  <div class="chip green white-text">
+    English
+  </div>
+  <div class="chip purple white-text">
+    Hindi
+  </div>
+  <div class="chip orange white-text">
+    Sanskrit
+  </div>
+    <h5 class="white-text pill">Classes</h5>
+  <div class="chip green white-text">
+    X
+  </div>
+  <div class="chip purple white-text">
+    XI
+  </div>
+
+  <h5 class="white-text">Sections</h5>
+  <div class="chip white-text green">X</div> <div class="chip">Sec A</div> <div class="chip">Sec C</div><div class="chip">Sec D</div>
+  <div class="chip white-text purple">XI</div> <div class="chip">Sec A</div> <div class="chip">Sec C</div><div class="chip">Sec D</div>
+  </div>
+  </div>
+
+  <div class="row grey lighten-5">
+    <div class="col s4">
+    <div class="card small">
+      <h5 style="padding-top: 5px" class="center grey-text darken-4">Class X (Hindi )</h5>
+      <div class="divider"></div>
+        <div class="ct-chart ct-perfect-fourth2"></div>
+        <ul style="float: left;
+    white-space: nowrap;
+    list-style: none;
+">
+          <li style="display: inline-block;"><p class="center grey-text darken-4"><i class="material-icons yellow-text" style="    display: inline-flex;
+    vertical-align: top;">stop</i>Scored 65%+</p></li>
+          <li style="display: inline-block;"><p class="center grey-text darken-4"><i class="material-icons" style="color: #d70206;display: inline-flex;
+    vertical-align: top;">stop</i>Scored 40%+</p></li>
+          <li style="display: inline-block;"><p class="center grey-text darken-4"><i class="material-icons" style="color: #f05b4f;display: inline-flex;
+    vertical-align: top;">stop</i>Scored 20%+</p></li>
+        </ul>
+    </div>
+    </div>
+        <div class="col s4">
+    <div class="card small">
+      <h5 style="padding-top: 5px" class="center grey-text darken-4">Class X (Sanskrit )</h5>
+      <div class="divider"></div>
+        <div class="ct-chart2 ct-perfect-fourth2"></div>
+        <ul style="float: left;
+    white-space: nowrap;
+    list-style: none;
+">
+          <li style="display: inline-block;"><p class="center grey-text darken-4"><i class="material-icons yellow-text" style="    display: inline-flex;
+    vertical-align: top;">stop</i>Scored 65%+</p></li>
+          <li style="display: inline-block;"><p class="center grey-text darken-4"><i class="material-icons" style="color: #d70206;display: inline-flex;
+    vertical-align: top;">stop</i>Scored 40%+</p></li>
+          <li style="display: inline-block;"><p class="center grey-text darken-4"><i class="material-icons" style="color: #f05b4f;display: inline-flex;
+    vertical-align: top;">stop</i>Scored 20%+</p></li>
+        </ul>
+    </div>
+    </div>
+            <div class="col s4">
+    <div class="card small">
+      <h5 style="padding-top: 5px" class="center grey-text darken-4">Class X (English)</h5>
+      <div class="divider"></div>
+        <div class="ct-chart3 ct-perfect-fourth2"></div>
+        <ul style="float: left;
+    white-space: nowrap;
+    list-style: none;
+">
+          <li style="display: inline-block;"><p class="center grey-text darken-4"><i class="material-icons yellow-text" style="    display: inline-flex;
+    vertical-align: top;">stop</i>Scored 65%+</p></li>
+          <li style="display: inline-block;"><p class="center grey-text darken-4"><i class="material-icons" style="color: #d70206;display: inline-flex;
+    vertical-align: top;">stop</i>Scored 40%+</p></li>
+          <li style="display: inline-block;"><p class="center grey-text darken-4"><i class="material-icons" style="color: #f05b4f;display: inline-flex;
+    vertical-align: top;">stop</i>Scored 20%+</p></li>
+        </ul>
+    </div>
+    </div>
+  </div>
+<div class="divider"></div>
+
+  <div class="purple">
+  <div class="col s12 green">
+     <ul class="tabs tabs-fixed-width green">
+        <li class="tab"><a href="#test4" class="white-text">Class X(A)</a></li>
+        <li class="tab"><a href="#test4" class="white-text">Class X(D)</a></li>
+        <li class="tab"><a href="#test4" class="white-text">Class X(C)</a></li>
+        <li class="tab"><a href="#test4" class="white-text">Class XI(A)</a></li>
+        <li class="tab"><a href="#test4" class="white-text">Class XI(C)</a></li>
+        <li class="tab"><a href="#test4" class="white-text">Class XI(D)</a></li>
+      </ul>
+    </div>
+    </div>
+<div class="row green">
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+<div class="col s3">
+<div class="card" style="height: 300px" >
+ <img src="http://www.schoolsdomain.com/mes/admin/news_images/1351058626abdullamohd.jpg"   style=" display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right: auto;width: 150px;height: 150px;" alt="" class="circle">
+  <h5 class="center black-text">Saksham Chaudhry</h5>
+  <p class="center red-text">Roll No: <span class="blue-text">01</span></p>
+        <p class="center"><a onclick="window.location='studentdetail.html'" class="waves-effect waves-light btn purple">Details</a></p>
+</div>
+</div>
+</div>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+  var data = {
+  series: [4, 2, 6]
+};
+
+var sum = function(a, b) { return a + b };
+
+  new Chartist.Pie('.ct-chart', data, {
+  labelInterpolationFnc: function(value) {
+    return Math.round(value / data.series.reduce(sum) * 100) + '%';
+  }
+});
+    var data2 = {
+  series: [4, 2, 6]
+};
+
+var sum = function(a, b) { return a + b };
+
+  new Chartist.Pie('.ct-chart2', data2, {
+  labelInterpolationFnc: function(value) {
+    return Math.round(value / data.series.reduce(sum) * 100) + '%';
+  }
+});
+      var data3 = {
+  series: [5, 4, 6]
+};
+
+var sum = function(a, b) { return a + b };
+
+  new Chartist.Pie('.ct-chart3', data3, {
+  labelInterpolationFnc: function(value) {
+    return Math.round(value / data.series.reduce(sum) * 100) + '%';
+  }
+});
+</script>
+  </html>
