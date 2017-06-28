@@ -1,0 +1,159 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/chartist.css">
+      <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="js/chartloader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Month', 'Percentage',],
+        ['June', 88],
+        ['May', 85],
+        ['April', 90],
+        ['February', 80],
+        ['January', 70]
+      ]);
+
+      var options = {
+        title: 'Overall Attendance',
+        chartArea: {width: '50%',},
+        hAxis: {
+          title: 'Total Attendance',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'Month'
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+      </script>
+      <script type="text/javascript">
+      </script>
+    </head>
+<!--    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ -->   <style type="text/css">
+     .material-icons{
+    display: inline-flex;
+    vertical-align: top;
+}
+   </style>
+      <script type="text/javascript" src="js/init.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+<body style="  background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+          <div class="card red" style="width: 280px; height: 80px;background-color: #ffffff;  border-radius: 180px;
+line-height: 80px;
+  font-size: 40px;text-align: center;  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff
+" >Welcome</div>
+          <div class="row">
+          <div class="col s6">
+          <div class="col s6">
+          <div class="card small" id="f1" onmouseover="mouseOver(f1)" onmouseout="mouseOut(f1)">
+                    <img src="img/student.png" class="center" style="width: 40%;height: 40%;margin-left: 30%;margin-top: 33px">
+          <h4 class="center">Admissions</h4>
+          </div>
+          </div>
+                    <div class="col s6">
+          <div class="card small" id="f2" onmouseover="mouseOver(f2)" onmouseout="mouseOut(f2)">
+          <img src="img/notes.png" class="center" style="width: 40%;height: 40%;margin-left: 30%;margin-top: 33px">
+          <h4 class="center">Student Fees</h4>
+          </div>
+          </div>
+                    <div class="col s6" onclick="window.location='index.html'">
+          <div class="card small" id="f3" onmouseover="mouseOver(f3)" onmouseout="mouseOut(f3)">
+                    <img src="img/academics.png" class="center" style="width: 40%;height: 40%;margin-left: 30%;margin-top: 33px">
+          <h4 class="center">Academics</h4>
+          </div>
+          </div>
+                    <div class="col s6">
+          <div class="card small" onmouseover="mouseOver(f4)" onmouseout="mouseOut(f4)">
+                    <img src="img/library.png" class="center" style="width: 40%;height: 40%;margin-left: 30%;margin-top: 33px">
+          <h4 class="center">Library</h4>
+          </div>
+          </div>
+    </div>
+
+        <div class="col s6">
+        <div class="col s12">
+            <div class="card small">
+            <h4 class="center">Overall Attendance</h4>
+<div class="ct-chart2" style="height: 70%" id="line_top_x"></div>
+
+            </div>
+            </div>
+            <div class="col s12">
+            <div class="card small">
+            <h4 class="center bold" style="margin-top: 10px">Academic Performance</h4>
+                <div class="ct-chart" id="line_top_x" style="height: 70%"></div>
+            </div>
+          </div>
+          </div>
+    </body>
+    <script type="text/javascript">
+      var data = {
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  series: [
+    [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
+    [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
+  ]
+};
+
+var options = {
+  seriesBarDistance: 10
+};
+
+var responsiveOptions = [
+  ['screen and (max-width: 640px)', {
+    seriesBarDistance: 5,
+    axisX: {
+      labelInterpolationFnc: function (value) {
+        return value[0];
+      }
+    }
+  }]
+];
+
+new Chartist.Bar('.ct-chart', data, options, responsiveOptions);
+new Chartist.Bar('.ct-chart2', {
+  labels: ['VI', 'VII', 'VII', 'VIII', 'IX', 'X', 'XI'],
+  series: [
+    [5, 4, 3, 7, 5, 7, 3],
+  ]
+}, {
+  seriesBarDistance: 30,
+  reverseData: true,
+  horizontalBars: true,
+  axisY: {
+    offset: 70
+  }
+});
+    </script>
+    <script type="text/javascript">
+           function mouseOver(dj){
+      console.log("yooo");
+      var d = document.getElementById(dj);
+      d.className += " z-depth-5";
+     }
+     function mouseOut(dj){
+      var d = document.getElementById(dj);
+      d.classList.remove('z-depth-5');
+     }
+    </script>
+  </html>
